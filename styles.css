@@ -109,12 +109,23 @@ header {
     margin-top: 40px;
 }
 
+.services-grid a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .service-card {
     background: white;
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 /* About Section */
@@ -246,5 +257,71 @@ footer {
     
     .facility-image img {
         height: 180px;
+    }
+}
+
+/* Service Pages Styles */
+.service-header {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('gym-background.jpg');
+}
+
+.service-details {
+    padding: 80px 0;
+}
+
+.service-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.service-description h3 {
+    margin: 30px 0 15px;
+}
+
+.service-description ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.pricing-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.price-card {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.price-card .price {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007bff;
+    margin: 15px 0;
+}
+
+.cta-section {
+    background: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .pricing-options {
+        grid-template-columns: 1fr;
     }
 } 
