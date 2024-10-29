@@ -115,17 +115,26 @@ header {
 }
 
 .service-card {
-    background: white;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    background: #f5f5f5;
+    padding: 2rem;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
 }
 
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+    color: inherit;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: inherit;
 }
 
 /* About Section */
